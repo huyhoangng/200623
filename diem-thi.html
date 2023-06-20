@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ket qua thi vao 10</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(243, 255, 255);
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+        form{
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type="button"], input[type="submit"]{
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px ;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="button"], input[type="submit"]:hover{
+            background-color: aqua;
+        }
+        #point{
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="js/diem-thi.js"></script>
+</head>
+<body>
+    <h1>Điểm thi vào lớp 10 của bạn !!!!</h1>
+<form action="">
+    <label for="toan">Toán:</label>
+    <input type="number" step="0.01" id="toan" required>
+    <label for="van">Văn:</label>
+    <input type="number" step="0.01" id="van" required>
+    <label for="anh">Anh:</label>
+    <input type="number" step="0.01" id="anh" required>
+    
+    <input type="button" value="Tính tổng" onclick="calculateTotal()">
+    <div id="point"></div>
+</form>
+    
+</body>
+</html>
